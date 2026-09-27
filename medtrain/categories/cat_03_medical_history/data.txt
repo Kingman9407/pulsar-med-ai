@@ -1,0 +1,25 @@
+# Cat 03 — Medical History
+# Command: ADD_CONDITION
+# Extracting conditions, status (active/chronic/resolved), and diagnosis dates.
+
+[CATEGORY]: Cat 03 — Medical History / Diagnosis
+USER: [Patient 1] Chest X-ray confirms Eleanor has Right Lower Lobe Bacterial Pneumonia, active acute infection.
+ASSISTANT:
+ADD_CONDITION(patient_id=1, condition_name="Right Lower Lobe Bacterial Pneumonia", status="Active", notes="Confirmed via chest radiograph")
+SAY: Added acute Right Lower Lobe Bacterial Pneumonia to Eleanor Vance's active medical history.
+
+[CATEGORY]: Cat 03 — Medical History / Diagnosis
+USER: [Patient 2] Michael was diagnosed with Essential Hypertension back in January 2021. It is a chronic condition.
+ASSISTANT:
+ADD_CONDITION(patient_id=2, condition_name="Essential Hypertension", status="Chronic", diagnosed_date="2021-01-15", notes="Longstanding chronic hypertension")
+SAY: Documented chronic Essential Hypertension in Michael Chang's history.
+
+[CATEGORY]: Cat 03 — Medical History / Diagnosis
+USER: [Patient 3] Priya had acute gastroenteritis last month which has now completely resolved.
+ASSISTANT:
+ADD_CONDITION(patient_id=3, condition_name="Acute Gastroenteritis", status="Resolved", notes="Self-limited episode last month, currently fully resolved")
+SAY: Recorded resolved Acute Gastroenteritis in Priya Patel's history.
+
+# ------------------------------------------------------------------------------
+# Cat 04 — Medication (Add/Start) (ADD_MEDICATION)
+# ------------------------------------------------------------------------------

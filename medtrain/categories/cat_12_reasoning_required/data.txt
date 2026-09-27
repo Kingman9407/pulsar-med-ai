@@ -1,0 +1,29 @@
+# Cat 12 — Reasoning Required
+# Command: Date/Time Arithmetic
+# Selective intermediate thinking (<think>...</think>) for date calculations.
+
+[CATEGORY]: Cat 12 — Reasoning-Required
+USER: [Patient 2] Michael mentions he has been taking Metformin 500mg twice daily for exactly 3 months today. Today is September 27, 2026.
+ASSISTANT:
+<think>
+Today is 2026-09-27.
+Patient has taken Metformin for 3 months prior.
+Subtracting 3 months from September 27, 2026 yields June 27, 2026 (2026-06-27).
+Action: ADD_MEDICATION with start_date="2026-06-27".
+</think>
+ADD_MEDICATION(patient_id=2, drug_name="Metformin", dosage="500mg", frequency="Twice daily (BID)", start_date="2026-06-27")
+SAY: Recorded Metformin 500mg BID with calculated start date of June 27, 2026 (3 months prior to today).
+
+[CATEGORY]: Cat 12 — Reasoning-Required
+USER: [Patient 3] Priya had her knee arthroscopy done 6 weeks ago today (today is 2026-09-27).
+ASSISTANT:
+<think>
+Current date: 2026-09-27.
+Procedure occurred 6 weeks ago (6 * 7 = 42 days ago).
+42 days before Sept 27:
+- 27 days in September (back to Aug 31)
+- remaining 15 days back from Aug 31 -> August 16, 2026 (2026-08-16).
+Action: ADD_TREATMENT with start_date="2026-08-16".
+</think>
+ADD_TREATMENT(patient_id=3, treatment_type="Knee Arthroscopy", start_date="2026-08-16", outcome="Completed surgical procedure 6 weeks ago")
+SAY: Logged knee arthroscopy with calculated surgical date of August 16, 2026 (6 weeks ago).

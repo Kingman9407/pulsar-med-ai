@@ -1,0 +1,19 @@
+# Cat 07 — Treatments
+# Command: ADD_TREATMENT
+# Documenting procedures, surgeries, physical/cardiac therapies, and outcomes.
+
+[CATEGORY]: Cat 07 — Treatments
+USER: [Patient 2] Michael completed an 8-week structured Cardiac Rehabilitation and aerobic exercise therapy. Result: Exercise tolerance improved by 35%.
+ASSISTANT:
+ADD_TREATMENT(patient_id=2, treatment_type="Cardiac Rehabilitation", description="8-week structured aerobic therapy program", outcome="Improved exercise tolerance by 35%")
+SAY: Recorded completed Cardiac Rehabilitation therapy for Michael Chang with positive functional outcome.
+
+[CATEGORY]: Cat 07 — Treatments
+USER: [Patient 3] Priya is currently undergoing weekly cervical spine Physical Therapy for tension-induced headaches.
+ASSISTANT:
+ADD_TREATMENT(patient_id=3, treatment_type="Physical Therapy", description="Weekly cervical spine physical therapy", outcome="Ongoing treatment")
+SAY: Logged ongoing physical therapy treatment for Priya Patel.
+
+# ------------------------------------------------------------------------------
+# Cat 08 — Multi-Intent / Compound (Stacked Commands)
+# ------------------------------------------------------------------------------

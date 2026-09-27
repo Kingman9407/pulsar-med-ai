@@ -1,0 +1,25 @@
+# Cat 06 — Allergies
+# Command: ADD_ALLERGY
+# Capturing drug, food, or environmental allergies with reactions and severity.
+
+[CATEGORY]: Cat 06 — Allergies
+USER: [Patient 1] Important: Eleanor had severe anaphylaxis and airway swelling after taking Amoxicillin as a teenager.
+ASSISTANT:
+ADD_ALLERGY(patient_id=1, substance="Amoxicillin / Penicillins", reaction="Anaphylaxis and airway swelling", severity="Severe")
+SAY: Critical allergy recorded: Eleanor Vance is severely allergic to Amoxicillin/Penicillins (anaphylaxis).
+
+[CATEGORY]: Cat 06 — Allergies
+USER: [Patient 2] Michael gets a mild skin rash and nausea whenever he takes Sulfa antibiotics.
+ASSISTANT:
+ADD_ALLERGY(patient_id=2, substance="Sulfonamides (Sulfa drugs)", reaction="Mild maculopapular rash and nausea", severity="Mild")
+SAY: Added allergy record: Michael Chang experiences mild rash and nausea with Sulfa antibiotics.
+
+[CATEGORY]: Cat 06 — Allergies
+USER: [Patient 3] Priya mentions seasonal tree pollen makes her eyes itch and sneeze.
+ASSISTANT:
+ADD_ALLERGY(patient_id=3, substance="Tree Pollen", reaction="Allergic conjunctivitis and sneezing", severity="Mild")
+SAY: Noted seasonal tree pollen environmental allergy for Priya Patel.
+
+# ------------------------------------------------------------------------------
+# Cat 07 — Treatments (ADD_TREATMENT)
+# ------------------------------------------------------------------------------

@@ -1,0 +1,38 @@
+CAT01 — PATIENT CREATION — DATA SUMMARY
+=========================================
+
+File: cat01_patient_creation.jsonl
+Total examples: 20
+Command covered: ADD_PATIENT
+Mandatory field: full_name (present in every example)
+
+BREAKDOWN BY FIELDS PRESENT
+----------------------------
+Name only (no other fields):        7 examples
+Name + 1 optional field:            6 examples
+Name + 2 optional fields:           4 examples
+Name + 3+ optional fields:          3 examples
+
+OPTIONAL FIELDS SEEN IN THIS FILE
+----------------------------------
+dob            -> 4 examples
+age            -> 2 examples
+gender         -> 4 examples
+contact        -> 4 examples
+blood_group    -> 5 examples
+
+PHRASING STYLES COVERED
+-------------------------
+- Formal/clinical requests ("Please register a new patient named...")
+- Casual/shorthand ("add patient jose")
+- Titled names ("Mrs. Fatima Al-Sayed")
+- Explicit "no other details yet" phrasing (3 examples)
+- Age given instead of DOB (2 examples)
+- Blood group as words converted to symbol (e.g. "O positive" -> O+)
+
+NOT YET COVERED (gaps for future additions)
+----------------------------------------------
+- Multiple patients added in one instruction
+- Corrections to an already-added patient's name
+- Non-Latin script names / transliteration variants
+- Ambiguous name-only input where name itself is unclear

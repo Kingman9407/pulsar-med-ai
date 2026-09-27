@@ -1,0 +1,86 @@
+# ==============================================================================
+# 🚫 Git Ignore Rules for Medical AI & Flutter Workspace
+# ==============================================================================
+
+# --- AI Models, Checkpoints & Weights ---
+# (Models are downloaded directly from Hugging Face by the environment during training)
+*.gguf
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.h5
+
+# Local model & training output folders
+AI_model/
+models/
+medical_lora_output/
+medical_merged_model/
+runs/
+wandb/
+llama.cpp/
+
+# Hugging Face and PyTorch local cache
+.cache/
+cache/
+huggingface/
+HF_HOME/
+TRANSFORMERS_CACHE/
+
+# --- Local SQLite Databases & Logs ---
+*.sqlite
+*.sqlite-journal
+*.sqlite3
+*.db
+*.db-journal
+*.log
+
+# --- Python Environment & Bytecode ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Jupyter Notebook Artifacts ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# --- Operating System & IDE Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+*.iml
+*.iws
+
+# --- Flutter & Dart Artifacts ---
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/

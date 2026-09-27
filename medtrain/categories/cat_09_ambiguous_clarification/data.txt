@@ -1,0 +1,22 @@
+# Cat 09 — Ambiguous Clarification
+# Command: Clarification (SAY only)
+# Asking for missing details when input is ambiguous rather than hallucinating commands.
+
+[CATEGORY]: Cat 09 — Ambiguous / Clarification-Needed
+USER: [Patient 2] He feels a little unwell today and maybe needs some medicine.
+ASSISTANT:
+SAY: Could you please provide more details on Michael's specific symptoms, and whether any examination was performed or specific medication is being prescribed?
+
+[CATEGORY]: Cat 09 — Ambiguous / Clarification-Needed
+USER: Patient says they took some blue pills last week.
+ASSISTANT:
+SAY: Do you know the drug name, strength, or prescription details for the medication the patient was taking?
+
+[CATEGORY]: Cat 09 — Ambiguous / Clarification-Needed
+USER: Log a visit for her.
+ASSISTANT:
+SAY: Please specify which patient this visit is for, along with the visit type (e.g. checkup, urgent care) and chief complaint.
+
+# ------------------------------------------------------------------------------
+# Cat 10 — Conversational / Non-Command (Pure SAY)
+# ------------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+# Cat 08 — Multi Intent
+# Command: Compound (Multiple Commands)
+# Handling complex clinical statements requiring stacked commands in a single output.
+
+[CATEGORY]: Cat 08 — Multi-Intent / Compound
+USER: [Patient 1] Eleanor came in for an ER follow-up visit. We confirmed acute sinusitis. She had a bad facial swelling reaction to Bactrim so note that allergy. Start her on Cefdinir 300mg twice daily for 7 days.
+ASSISTANT:
+LOG_VISIT(patient_id=1, visit_type="ER Follow-Up", chief_complaint="Sinusitis follow-up post ER")
+ADD_CONDITION(patient_id=1, condition_name="Acute Sinusitis", status="Active")
+ADD_ALLERGY(patient_id=1, substance="Trimethoprim/Sulfamethoxazole (Bactrim)", reaction="Facial angioedema / swelling", severity="Severe")
+ADD_MEDICATION(patient_id=1, drug_name="Cefdinir", dosage="300mg", frequency="Twice daily (BID)", start_date="2026-09-27", end_date="2026-10-04")
+SAY: Logged ER follow-up visit, recorded acute sinusitis, documented severe Bactrim allergy, and initiated Cefdinir 300mg BID for 7 days.
+
+[CATEGORY]: Cat 08 — Multi-Intent / Compound
+USER: New patient David Miller, DOB 1974-05-12. He presents for routine consultation complaining of chronic low back pain. Prescribing Meloxicam 15mg daily.
+ASSISTANT:
+ADD_PATIENT(full_name="David Miller", dob="1974-05-12")
+LOG_VISIT(patient_id=4, visit_type="Consultation", chief_complaint="Chronic lower back pain")
+ADD_CONDITION(patient_id=4, condition_name="Chronic Lower Back Pain", status="Chronic")
+ADD_MEDICATION(patient_id=4, drug_name="Meloxicam", dosage="15mg", frequency="Daily", start_date="2026-09-27")
+SAY: Created patient chart for David Miller, logged back pain consultation, and prescribed Meloxicam 15mg daily.
+
+# ------------------------------------------------------------------------------
+# Cat 09 — Ambiguous / Clarification-Needed (Pure SAY)
+# ------------------------------------------------------------------------------

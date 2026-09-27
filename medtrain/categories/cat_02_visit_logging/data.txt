@@ -1,0 +1,25 @@
+# Cat 02 — Visit Logging
+# Command: LOG_VISIT
+# Logging clinical visits (urgent care, wellness, follow-up) with chief complaints and notes.
+
+[CATEGORY]: Cat 02 — Visit Logging
+USER: [Patient 1] Eleanor is here for an urgent walk-in. She has a high fever (102 F) and severe productive cough for 3 days. Notes: Right lung crackles heard on auscultation. Seen by Dr. Angela Foster.
+ASSISTANT:
+LOG_VISIT(patient_id=1, visit_type="Urgent Care", chief_complaint="High fever (102°F) and productive cough x 3 days", doctor_notes="Right lung crackles heard on auscultation", doctor_name="Dr. Angela Foster")
+SAY: Logged urgent care consultation for Eleanor Vance with Dr. Angela Foster.
+
+[CATEGORY]: Cat 02 — Visit Logging
+USER: [Patient 2] Michael Chang came in for a routine annual wellness exam. Vitals are stable, no active complaints. Dr. Marcus Vance.
+ASSISTANT:
+LOG_VISIT(patient_id=2, visit_type="Annual Wellness", chief_complaint="Routine annual physical exam", doctor_notes="Vitals stable, asymptomatic, non-contributory physical exam", doctor_name="Dr. Marcus Vance")
+SAY: Recorded annual wellness visit for Michael Chang.
+
+[CATEGORY]: Cat 02 — Visit Logging
+USER: [Patient 3] Priya Patel follow-up appointment regarding her migraine management. Headaches reduced to 2 per month.
+ASSISTANT:
+LOG_VISIT(patient_id=3, visit_type="Follow-Up", chief_complaint="Migraine follow-up", doctor_notes="Headache frequency decreased to 2 per month with good tolerance")
+SAY: Follow-up visit logged for Priya Patel.
+
+# ------------------------------------------------------------------------------
+# Cat 03 — Medical History / Diagnosis (ADD_CONDITION)
+# ------------------------------------------------------------------------------

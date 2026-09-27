@@ -1,0 +1,20 @@
+# Cat 11 — Negation Correction
+# Command: Correction / Override
+# Handling corrections or de-labeling prior records without creating duplicates.
+
+[CATEGORY]: Cat 11 — Negation / Correction
+USER: [Patient 2] Wait, strike that previous note — Michael is NOT taking Atorvastatin 20mg, he is taking Rosuvastatin 10mg daily.
+ASSISTANT:
+UPDATE_MEDICATION(patient_id=2, drug_name="Atorvastatin", status="Cancelled", notes="Correction: entered in error, patient is taking Rosuvastatin")
+ADD_MEDICATION(patient_id=2, drug_name="Rosuvastatin", dosage="10mg", frequency="Daily", start_date="2026-09-27")
+SAY: Corrected medication list for Michael Chang: removed Atorvastatin and logged Rosuvastatin 10mg daily.
+
+[CATEGORY]: Cat 11 — Negation / Correction
+USER: [Patient 1] Actually, Eleanor doesn't have a codeine allergy, she just felt mildly nauseous once. Remove codeine from her severe allergies.
+ASSISTANT:
+UPDATE_ALLERGY(patient_id=1, substance="Codeine", status="Removed", notes="De-labeled: isolated nausea without true allergic hypersensitivity")
+SAY: De-labeled codeine allergy from Eleanor Vance's chart following clinical review.
+
+# ------------------------------------------------------------------------------
+# Cat 12 — Reasoning-Required (Date / Time Arithmetic)
+# ------------------------------------------------------------------------------

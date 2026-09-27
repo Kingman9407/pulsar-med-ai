@@ -1,0 +1,22 @@
+# Cat 10 — Conversational
+# Command: Conversational (SAY only)
+# General small talk, greetings, and clinical guidance without database writes.
+
+[CATEGORY]: Cat 10 — Conversational / Non-Command
+USER: Good morning! How does the medical recording system work today?
+ASSISTANT:
+SAY: Good morning! I assist by listening to your clinical notes and automatically updating patient charts, visits, diagnoses, medications, allergies, and treatments in real-time.
+
+[CATEGORY]: Cat 10 — Conversational / Non-Command
+USER: Thank you doctor, that was very helpful.
+ASSISTANT:
+SAY: You are very welcome! Let me know whenever you need to record additional clinical details or review patient histories.
+
+[CATEGORY]: Cat 10 — Conversational / Non-Command
+USER: What is the recommended first-line treatment for uncomplicated acute otitis media?
+ASSISTANT:
+SAY: For uncomplicated acute otitis media in patients without penicillin allergy, high-dose Amoxicillin (80-90 mg/kg/day in children) is typically recommended as first-line therapy. In penicillin-allergic patients, macrolides or cephalosporins like Cefdinir are often considered.
+
+# ------------------------------------------------------------------------------
+# Cat 11 — Negation / Correction (Override)
+# ------------------------------------------------------------------------------

@@ -1,0 +1,20 @@
+{"instruction": "Add a new patient, name is Ramesh Kumar.", "output": "SAY: Created a new patient chart for Ramesh Kumar.\nADD_PATIENT full_name=Ramesh_Kumar"}
+{"instruction": "Register John Doe as a patient.", "output": "SAY: New patient record started for John Doe.\nADD_PATIENT full_name=John_Doe"}
+{"instruction": "New patient: just her name for now, Anita Sharma.", "output": "SAY: Got it, adding Anita Sharma with just her name for now.\nADD_PATIENT full_name=Anita_Sharma"}
+{"instruction": "Please register a new patient named Eleanor Vance, born on March 14, 1982, female, blood type O positive, contact number 555-0144.", "output": "SAY: Created new patient chart for Eleanor Vance with full demographic details.\nADD_PATIENT full_name=Eleanor_Vance dob=1982-03-14 gender=F blood_group=O+ contact=555-0144"}
+{"instruction": "Add a patient, Michael Chen, 45 years old, male.", "output": "SAY: Added Michael Chen to the system.\nADD_PATIENT full_name=Michael_Chen age=45 gender=M"}
+{"instruction": "New entry - patient's name is Priya, no other details right now.", "output": "SAY: Noted, creating a patient record for Priya. You can add more details later.\nADD_PATIENT full_name=Priya"}
+{"instruction": "This is David Okafor, blood group AB negative, phone 555-9012.", "output": "SAY: Added David Okafor with blood group and contact number.\nADD_PATIENT full_name=David_Okafor blood_group=AB- contact=555-9012"}
+{"instruction": "Can you create a patient record for Grace? That's all I have right now.", "output": "SAY: Sure, creating a record for Grace. We can fill in the rest later.\nADD_PATIENT full_name=Grace"}
+{"instruction": "Add Mrs. Fatima Al-Sayed, DOB 1975-11-02, female.", "output": "SAY: Created patient record for Fatima Al-Sayed.\nADD_PATIENT full_name=Fatima_Al-Sayed dob=1975-11-02 gender=F"}
+{"instruction": "New patient. Name: Tom. Nothing else yet, will update after intake.", "output": "SAY: Got it, adding Tom for now — the rest can be filled in after intake.\nADD_PATIENT full_name=Tom"}
+{"instruction": "Register a patient - Wei Zhang, contact 555-3321.", "output": "SAY: Added Wei Zhang with contact information.\nADD_PATIENT full_name=Wei_Zhang contact=555-3321"}
+{"instruction": "Log a new patient named Sanjay Patel, male, blood type B positive.", "output": "SAY: New patient chart created for Sanjay Patel.\nADD_PATIENT full_name=Sanjay_Patel gender=M blood_group=B+"}
+{"instruction": "Just put her down as a patient, first name Olivia, we'll get the rest later.", "output": "SAY: Adding Olivia as a new patient — remaining details can come later.\nADD_PATIENT full_name=Olivia"}
+{"instruction": "Add patient Carlos Mendes. Born 1990-07-22. Male. O negative blood type. Phone 555-4487.", "output": "SAY: Full patient record created for Carlos Mendes.\nADD_PATIENT full_name=Carlos_Mendes dob=1990-07-22 gender=M blood_group=O- contact=555-4487"}
+{"instruction": "New patient, no info except her name, Meera.", "output": "SAY: Creating a minimal record for Meera with just her name.\nADD_PATIENT full_name=Meera"}
+{"instruction": "Please add a patient record - his name's Robert, and he's 60.", "output": "SAY: Added Robert to the system with his age noted.\nADD_PATIENT full_name=Robert age=60"}
+{"instruction": "Start a chart for Hannah Wu, contact number is 555-7765, blood group A positive.", "output": "SAY: Chart created for Hannah Wu with contact and blood group.\nADD_PATIENT full_name=Hannah_Wu contact=555-7765 blood_group=A+"}
+{"instruction": "add patient jose", "output": "SAY: Added Jose as a new patient.\nADD_PATIENT full_name=Jose"}
+{"instruction": "We have a walk-in, name is Isabella Rossi, female, born June 3rd 1988.", "output": "SAY: New patient record created for Isabella Rossi.\nADD_PATIENT full_name=Isabella_Rossi dob=1988-06-03 gender=F"}
+{"instruction": "Create a record, patient name only: Kwame.", "output": "SAY: Creating a record for Kwame with just the name.\nADD_PATIENT full_name=Kwame"}

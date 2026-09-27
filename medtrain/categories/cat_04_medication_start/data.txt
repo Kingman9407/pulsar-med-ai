@@ -1,0 +1,25 @@
+# Cat 04 — Medication Start
+# Command: ADD_MEDICATION
+# Prescribing new medications with drug name, dosage, frequency, and start dates.
+
+[CATEGORY]: Cat 04 — Medication (Add/Start)
+USER: [Patient 1] Starting Eleanor on Clarithromycin 500 mg by mouth twice a day for the next 10 days. Prescribed by Dr. Foster.
+ASSISTANT:
+ADD_MEDICATION(patient_id=1, drug_name="Clarithromycin", dosage="500mg", frequency="Twice daily (BID)", start_date="2026-09-27", end_date="2026-10-07", prescribed_by="Dr. Angela Foster")
+SAY: Prescribed Clarithromycin 500mg BID for 10 days for Eleanor Vance.
+
+[CATEGORY]: Cat 04 — Medication (Add/Start)
+USER: [Patient 2] Put Michael on Lisinopril 10mg once daily in the morning for blood pressure.
+ASSISTANT:
+ADD_MEDICATION(patient_id=2, drug_name="Lisinopril", dosage="10mg", frequency="Daily in morning", start_date="2026-09-27", prescribed_by="Dr. Marcus Vance")
+SAY: Added Lisinopril 10mg daily to Michael Chang's medication regimen.
+
+[CATEGORY]: Cat 04 — Medication (Add/Start)
+USER: [Patient 3] Start Sumatriptan 50 mg PO PRN at the earliest onset of migraine attack, max 200mg in 24 hours.
+ASSISTANT:
+ADD_MEDICATION(patient_id=3, drug_name="Sumatriptan", dosage="50mg", frequency="PRN at onset of migraine (max 200mg/24h)", start_date="2026-09-27")
+SAY: Prescribed Sumatriptan 50mg PRN for migraine onset for Priya Patel.
+
+# ------------------------------------------------------------------------------
+# Cat 05 — Medication (Stop/Update) (UPDATE_MEDICATION)
+# ------------------------------------------------------------------------------

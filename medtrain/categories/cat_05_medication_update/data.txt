@@ -1,0 +1,19 @@
+# Cat 05 — Medication Update
+# Command: UPDATE_MEDICATION
+# Modifying dosage, frequency, or discontinuing active medications.
+
+[CATEGORY]: Cat 05 — Medication (Stop/Update)
+USER: [Patient 2] Michael's blood pressure is still high on 10mg. Increase his Lisinopril dosage to 20mg once daily.
+ASSISTANT:
+UPDATE_MEDICATION(patient_id=2, drug_name="Lisinopril", new_dosage="20mg", frequency="Daily", status="Active", notes="Dose increased from 10mg to 20mg due to subtherapeutic BP")
+SAY: Updated Michael Chang's Lisinopril dosage from 10mg to 20mg daily.
+
+[CATEGORY]: Cat 05 — Medication (Stop/Update)
+USER: [Patient 1] Discontinue Eleanor's Albuterol inhaler immediately since her bronchospasms have cleared.
+ASSISTANT:
+UPDATE_MEDICATION(patient_id=1, drug_name="Albuterol Inhaler", status="Discontinued", end_date="2026-09-27", notes="Discontinued; bronchospasms resolved")
+SAY: Discontinued Albuterol inhaler for Eleanor Vance.
+
+# ------------------------------------------------------------------------------
+# Cat 06 — Allergies (ADD_ALLERGY)
+# ------------------------------------------------------------------------------
